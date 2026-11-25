@@ -1,0 +1,29 @@
+# ENSync example configuration
+# Copy to ensync.conf and edit. Lines beginning with # are comments.
+
+# Network
+server.port = 8080
+server.bind_address = 0.0.0.0
+
+# Rooms
+room.code_length = 6
+room.max_clients = 8
+room.host_transfer_timeout_ms = 5000
+
+# Clock synchronization
+sync.ping_samples = 15
+sync.drift_interval_min_ms = 10000
+sync.drift_interval_max_ms = 30000
+sync.start_lead_time_ms = 2500
+sync.minor_drift_threshold_ms = 5
+
+# Audio
+audio.default_delay_ms = 0
+audio.buffer_size_frames = 1024
+
+# Storage
+storage.backend = sqlite
+storage.path = data/ensync.db
+
+# Logging
+log.level = info

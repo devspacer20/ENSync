@@ -1,0 +1,15 @@
+.git
+.github
+.gitignore
+build
+cmake-build-*
+docs
+tests
+config/ensync.conf
+*.db
+*.sqlite
+*.sqlite3
+*.log
+*.o
+*.a
+.DS_Store
